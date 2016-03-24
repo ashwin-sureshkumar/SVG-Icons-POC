@@ -1,0 +1,21 @@
+{
+  "name": "SVG Icon POC",
+  "description": "Quick prototype of SVG minification and layering. An icon component",
+  "main": "index.js",
+  "authors": [
+    "Ashwin Sureshkumar <sashwin@ca.ibm.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.2"
+  }
+}

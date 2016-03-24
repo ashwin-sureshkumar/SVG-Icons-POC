@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="css/app.css" rel="stylesheet"/>
+    </head>
+    <body ng-app="app">
+        <div ng-controller="myController as Ctrl">
+            <svg class="icon" tabindex="0" xmlns=http://www.w3.org/2000/svg role="img" >
+                <title>cloudy</title>
+                <use xlink:href="assets/icons.svg#cloudy"></use>
+            </svg>
+            <my-icon file="icons" icon="cloudy"  alt="cloudy"></my-icon>
+            <my-icon file="icons" icon="rainy_thunder" class="icon-24 icon-red" alt="Raining and Thunder"></my-icon>
+            <my-icon file="icons" icon="sunny" class="icon-red" alt="Sunny"></my-icon>
+            <my-icon file="icons" icon="rainy_sunny" class="" alt="Raining and Sunny"></my-icon>
+            <my-icon file="{{Ctrl.weather.file}}" icon="{{Ctrl.weather.icon}}" class="{{Ctrl.weather.class}}" alt="{{Ctrl.weather.alt}}"></my-icon>
+        </div>
+    </body>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/my-icon/my-icon.directive.js"></script>
+    <script src="js/my-icon/my-icon.provider.js"></script>
+</html>
